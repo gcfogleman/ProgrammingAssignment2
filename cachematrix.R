@@ -10,8 +10,8 @@
 ## the R command   "cacheSolve(M)"  retrieves the inverse of x, if it exists, from the cache
 
 
-## makeCacheMatrix: This function creates a special "matrix" object 
-## that can cache its inverse.
+## makeCacheMatrix: This function creates a special "matrix" object, which is really a
+## list of functions, that can cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
   ## Set the default value of the inverse to NULL
